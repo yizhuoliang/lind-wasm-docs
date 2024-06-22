@@ -1,0 +1,4 @@
+site_name: Lind-Wasm Docs
+site_url: https://yizhuoliang.github.io/lind-wasm-docs/
+theme:
+  name:material
