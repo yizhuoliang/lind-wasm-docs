@@ -19,6 +19,7 @@ error: Unable to compile "newhello.wasm"
 ╰─▶ 1: Validation error: type mismatch: values remaining on stack at end of block (at offset 0x26a)
 ```
 One can also verify and get the same error by `wasm2wat`, which gives a more detailed message. To debug, we can use `wasm-objdump -x` to see the function types, a typical output is this
+
 ```
 Section Details:
 
@@ -49,6 +50,6 @@ Function[92]:
  - func[9] sig=6 <__GI___madvise>
  - func[10] sig=6 <__open64_nocancel>
 ......
- ```
+```
 
  Note that the `Type` section defines all the function args/ret types, and for each function, the `sig=X` just means the function has `type[X]`.

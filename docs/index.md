@@ -1,17 +1,11 @@
-# Welcome to MkDocs
+# Lind-WASM Project Documentation
+![Lind-WASM Highlevel Arch](lind-wasm-arch.png"Lind-WASM Highlevel Arch")
+## What is Lind-WASM project?
+**We are building a secure and performant runtime system**, which provides POSIX style system support for the WebAssembly (WASM) platform.
+Lind-WASM is compatible for unmodified C programs written for Linux, and can be executed as lightweight cages that enjoys Software Fault Isolation (SFI), fast Inter Process Communications (IPC), and many other advantages.
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+The core components that we made contribution to are:
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- **WASM-glibc** derived from glibc, the mot complete standard C library for the WASM platform
+- **Wasmtime** runtime modified tos support Linux style memory management, threading, etc
+- **rustposix** library OS that contributes to SFI and fast IPC

@@ -2,3 +2,17 @@ site_name: Lind-Wasm Docs
 site_url: https://yizhuoliang.github.io/lind-wasm-docs/
 theme:
   material
+
+nav:
+  - Home: index.md
+  - Progress: daily.md
+  - WASM Knowledge:
+    - understandTls.md
+  - Building WASM glibc: buildGlibcWASM.md
+  - Compiling C to WASM: wasmCompile.md
+  - Debugging WASM module with Wasmtime: wasmtime-debug.md
+  - How to add docs: writeDoc.md
+  - Team: team.md
+
+extra_css:
+  - stylesheets/img.css
